@@ -64,7 +64,7 @@ def main():
                     for signal in board.signal_inputs:
                         if signal.check_collision(mpos[0], mpos[1]):
                             signal.value = not signal.value            
-                    # # Click a button to spawn a new gate
+                    # Click a button to spawn a new gate
                     left_clicking = True
                     for button in board.buttons:
                         if button.button_rect.collidepoint(mpos) and left_clicking:
