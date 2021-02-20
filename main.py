@@ -31,7 +31,6 @@ def main():
     textinput = pygame_textinput.TextInput(font_family='sprites/Manrope-Medium.otf', font_size=constants.TEXTBOX_FONT_SIZE, text_color=constants.FONT_COLOR, antialias=True, max_string_length=40)
     new_chip_name = ''
 
-
     while run:
         clock.tick(FPS)
         mpos = pygame.mouse.get_pos()
@@ -63,7 +62,7 @@ def main():
                     # Turns on/off signal if mouse collides with input
                     for signal in board.signal_inputs:
                         if signal.check_collision(mpos[0], mpos[1]):
-                            signal.value = not signal.value            
+                            signal.value = not signal.value 
                     # Click a button to spawn a new gate
                     left_clicking = True
                     for button in board.buttons:
