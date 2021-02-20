@@ -1,4 +1,3 @@
-# General
 import pygame
 pygame.init()
 
