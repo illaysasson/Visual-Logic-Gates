@@ -65,7 +65,7 @@ def main():
                             signal.value = not signal.value 
                     # Click a button to spawn a new gate
                     left_clicking = True
-                    for button in board.buttons:
+                    for button in board.chip_buttons:
                         if button.button_rect.collidepoint(mpos) and left_clicking:
                             if button.text == 'CREATE':
                                 if new_chip_name != '':
@@ -75,6 +75,27 @@ def main():
                             else:
                                 left_clicking = False
                                 board.spawn_chip(button.text)
+
+                    # Add / remove inputs
+                    for button in board.input_buttons:
+                        if button.button_rect.collidepoint(mpos) and left_clicking:
+                            if button.text == '+':
+                                board.create_signals(len(board.signal_inputs) + 1, len(board.signal_outputs))
+                                left_clicking = False
+                            if button.text == '-':
+                                if len(board.signal_inputs) > 1:
+                                    board.create_signals(len(board.signal_inputs) - 1, len(board.signal_outputs))
+                                left_clicking = False
+                    # Add / remove outputs
+                    for button in board.output_buttons:
+                        if button.button_rect.collidepoint(mpos) and left_clicking:
+                            if button.text == '+':
+                                board.create_signals(len(board.signal_inputs), len(board.signal_outputs) + 1)
+                                left_clicking = False
+                            if button.text == '-':
+                                if len(board.signal_outputs) > 1:
+                                    board.create_signals(len(board.signal_inputs), len(board.signal_outputs) - 1)
+                                left_clicking = False
 
                         
                 # Middle click

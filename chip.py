@@ -55,10 +55,11 @@ class Chip:
 
     # Creates signals on the gate
     def create_signals(self, inputs, outputs):
+        # This took way to long to perfect... 
         for i in range(self.height):
-            if i % (self.height // (inputs + 1)) == 0 and i != 0 and abs(self.height - i) > constants.CHIP_SIGNAL_RADIUS:
+            if i % (self.height // (inputs + 1)) == 0 and i != 0 and len(self.inputs) < inputs:
                 self.inputs.append(Signal(self.pos.x, self.pos.y + i, constants.CHIP_SIGNAL_RADIUS))
-            if i % (self.height // (outputs + 1)) == 0 and i != 0 and abs(self.height - i) > constants.CHIP_SIGNAL_RADIUS:
+            if i % (self.height // (outputs + 1)) == 0 and i != 0 and len(self.outputs) < outputs:
                 self.outputs.append(Signal(self.pos.x + self.width, self.pos.y + i, constants.CHIP_SIGNAL_RADIUS))
 
     # Changes outputs based on the inputs and a logic table with the same name

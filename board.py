@@ -17,7 +17,10 @@ class Board:
         self.ui_rect = pygame.Rect(0, constants.HEIGHT - constants.UI_HEIGHT, constants.WIDTH, constants.MARGIN)
         self.border_rect = self.area.copy().inflate(constants.BORDER_WIDTH, constants.BORDER_WIDTH)
         self.textbox_rect = pygame.Rect(self.border_rect.left, constants.MARGIN * 0.25, self.border_rect.width, self.border_rect.top - constants.MARGIN * 0.5)
-        self.buttons = []
+        
+        self.input_buttons = []
+        self.output_buttons = []
+        self.chip_buttons = []
 
         self.signal_inputs = []
         self.signal_outputs = []
@@ -37,23 +40,49 @@ class Board:
         self.chips.clear()
         self.wires.clear()
 
-        self.buttons.clear()
+        self.chip_buttons.clear()
         self.create_buttons()
 
 
     # Creates signals at the start at the edges of the board based on the number of inputs and outputs
     def create_signals(self, inputs, outputs):
-        for i in range(constants.HEIGHT):
-            if i % (constants.HEIGHT // (inputs + 1)) == 0 and i != 0 and abs(constants.HEIGHT - i) > constants.MARGIN:
-                self.signal_inputs.append(Signal(constants.MARGIN, i, constants.SIGNAL_RADIUS))
-            if i % (constants.HEIGHT // (outputs + 1)) == 0 and i != 0 and abs(constants.HEIGHT - i) > constants.MARGIN:
-                self.signal_outputs.append(Signal(constants.WIDTH - constants.MARGIN, i, constants.SIGNAL_RADIUS))
+        self.signal_inputs.clear()
+        self.signal_outputs.clear()
+
+        inputs_radius = constants.SIGNAL_RADIUS
+        outputs_radius = constants.SIGNAL_RADIUS
+
+        # Code that resizes radius when the signals are divisible by 8
+        for i in range(1, inputs):
+            if i % 8 == 0:
+                inputs_radius /= 1.5
+
+        for i in range(1, outputs):
+            if i % 8 == 0:
+                outputs_radius /= 1.5
+
+        # This took way to long to perfect... 
+        for i in range(self.area.height):  
+            if i % (self.area.height // (inputs + 1)) == 0 and i != 0 and len(self.signal_inputs) < inputs:
+                self.signal_inputs.append(Signal(constants.MARGIN, self.area.top + i, inputs_radius))
+            if i % (self.area.height // (outputs + 1)) == 0 and i != 0 and len(self.signal_outputs) < outputs:
+                self.signal_outputs.append(Signal(constants.WIDTH - constants.MARGIN, self.area.top + i, outputs_radius))
 
     # Creates buttons based on truth tables available
     def create_buttons(self):
+        
+        # SIGNAL BUTTONS
+        self.input_buttons.append(Button('+', constants.BUTTON_SPACING, constants.MARGIN * 0.25, 20, self.border_rect.top - constants.MARGIN * 0.5))
+        self.input_buttons.append(Button('-', constants.BUTTON_SPACING, self.input_buttons[-1].button_rect.bottom + constants.BUTTON_SPACING, 20, self.border_rect.top - constants.MARGIN * 0.5))
 
-        self.buttons.append(Button('CREATE', constants.BUTTON_SPACING, self.ui_rect.center[1]))
-        buttons_x = constants.BUTTON_SPACING + self.buttons[0].width
+        self.output_buttons.append(Button('+', constants.WIDTH - constants.BUTTON_SPACING - constants.MARGIN * 0.25, constants.MARGIN * 0.25, 20, self.border_rect.top - constants.MARGIN * 0.5))
+        self.output_buttons.append(Button('-', constants.WIDTH - constants.BUTTON_SPACING - constants.MARGIN * 0.25, self.output_buttons[-1].button_rect.bottom + constants.BUTTON_SPACING, 20, self.border_rect.top - constants.MARGIN * 0.5))
+
+
+        # CHIP BUTTONS
+
+        self.chip_buttons.append(Button('CREATE', constants.BUTTON_SPACING, self.ui_rect.center[1]))
+        buttons_x = constants.BUTTON_SPACING + self.chip_buttons[0].width
 
         # Load list of all chips in json
         with open('chips_data.json', 'r') as file:
@@ -61,8 +90,8 @@ class Board:
 
         for tt in truth_tables:
             buttons_x += constants.BUTTON_SPACING
-            self.buttons.append((Button(tt['name'], buttons_x, self.ui_rect.center[1])))
-            buttons_x += self.buttons[tt['index']].width
+            self.chip_buttons.append((Button(tt['name'], buttons_x, self.ui_rect.center[1])))
+            buttons_x += self.chip_buttons[tt['index']].width
 
     def draw_board(self, screen):
         # Background color
@@ -80,8 +109,15 @@ class Board:
         # Text box
         pygame.draw.rect(screen, constants.BOARD_COLOR, self.textbox_rect)
 
-        for button in self.buttons:
-            button.draw_button(screen)
+        # Buttons
+        for button in self.chip_buttons:
+            button.draw_chip_button(screen)
+
+        for button in self.input_buttons:
+            button.draw_signal_button(screen)
+        
+        for button in self.output_buttons:
+            button.draw_signal_button(screen)
 
         # Draws inputs & outputs
         for signal in self.signal_inputs:
@@ -184,6 +220,9 @@ class Board:
         values = [False, True]
         all_possible_inputs = list(itertools.product(values, repeat=len(self.signal_inputs)))
 
+        # To get the board to its current state if creating chip failed
+        current_inputs = [signal.value for signal in self.signal_inputs]
+
         truth_inputs = []
         truth_outputs = []
 
@@ -197,7 +236,10 @@ class Board:
 
         # If it has no truth inputs, then its an empty chip
         if len(truth_inputs) == 0:
+            for i in range(len(self.signal_inputs)):
+                self.signal_inputs[i].value = current_inputs[i]
             return
+
 
         chip = {
             'index': 0,
