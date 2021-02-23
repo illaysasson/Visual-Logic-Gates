@@ -85,7 +85,7 @@ class Board:
         buttons_x = constants.BUTTON_SPACING + self.chip_buttons[0].width
 
         # Load list of all chips in json
-        with open('chips_data.json', 'r') as file:
+        with open(constants.CHIPS_JSON, 'r') as file:
             truth_tables = json.load(file)
 
         for tt in truth_tables:
@@ -205,7 +205,7 @@ class Board:
     # Spawns chip in the middle of the board
     def spawn_chip(self, name):
 #       Load list of all chips in json
-        with open('chips_data.json', 'r') as file:
+        with open(constants.CHIPS_JSON, 'r') as file:
             truth_tables = json.load(file)
 
         for tt in truth_tables:
@@ -253,7 +253,7 @@ class Board:
             chip[str(truth_inputs[i])] = truth_outputs[i]
 
         # Load list of all chips in json
-        with open('chips_data.json', 'r') as file:
+        with open(constants.CHIPS_JSON, 'r') as file:
             truth_tables = json.load(file)
 
         # Checks if a truth table with the same name already exists only if the list is not empty
@@ -268,7 +268,7 @@ class Board:
         truth_tables.append(chip)
 
         # Appends to the json list the new truth table/chip
-        with open('chips_data.json', 'w') as file:
+        with open(constants.CHIPS_JSON, 'w') as file:
             json.dump(truth_tables, file, indent=4)
 
         # Updates buttons

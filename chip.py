@@ -78,7 +78,7 @@ class Chip:
     # Finds a truth table with the same name as the chip
     def find_truth_table(self):
         # Load list of all chips in json
-        with open('chips_data.json', 'r') as file:
+        with open(constants.CHIPS_JSON, 'r') as file:
             truth_tables = json.load(file)
 
         for tt in truth_tables:

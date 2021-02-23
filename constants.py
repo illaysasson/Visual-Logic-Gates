@@ -4,6 +4,8 @@ pygame.init()
 WIDTH, HEIGHT = 1600, 800
 FONT_COLOR = 242, 237, 234
 
+CHIPS_JSON = 'chips_data.json'
+
 # BOARD
 OUTSIDE_COLOR = 53, 50, 49
 BORDER_COLOR = 81, 76, 75
