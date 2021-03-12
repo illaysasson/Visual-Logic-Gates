@@ -126,6 +126,3 @@ dmypy.json
 
 # VSCODE
 .vscode/
-
-# MY CHIPS
-chips_data_private

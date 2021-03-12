@@ -20,13 +20,17 @@ class Board:
         
         self.input_buttons = []
         self.output_buttons = []
+
         self.chip_buttons = []
+        self.settings_buttons = ['BINARY', 'GROUP']
 
         self.signal_inputs = []
         self.signal_outputs = []
 
         self.chips = []
         self.wires = []
+
+        self.settings = False
 
         self.create_signals(inputs, outputs)
         self.create_buttons()
@@ -62,11 +66,13 @@ class Board:
                 outputs_radius /= 1.5
 
         # This took way to long to perfect... 
-        for i in range(self.area.height):  
+        for i in range(self.area.height):
             if i % (self.area.height // (inputs + 1)) == 0 and i != 0 and len(self.signal_inputs) < inputs:
                 self.signal_inputs.append(Signal(constants.MARGIN, self.area.top + i, inputs_radius))
             if i % (self.area.height // (outputs + 1)) == 0 and i != 0 and len(self.signal_outputs) < outputs:
                 self.signal_outputs.append(Signal(constants.WIDTH - constants.MARGIN, self.area.top + i, outputs_radius))
+
+        self.wires.clear() # TEMPORARY
 
     # Creates buttons based on truth tables available
     def create_buttons(self):
@@ -78,9 +84,15 @@ class Board:
         self.output_buttons.append(Button('+', constants.WIDTH - constants.BUTTON_SPACING - constants.MARGIN * 0.25, constants.MARGIN * 0.25, 20, self.border_rect.top - constants.MARGIN * 0.5))
         self.output_buttons.append(Button('-', constants.WIDTH - constants.BUTTON_SPACING - constants.MARGIN * 0.25, self.output_buttons[-1].button_rect.bottom + constants.BUTTON_SPACING, 20, self.border_rect.top - constants.MARGIN * 0.5))
 
+        # SETTINGS BUTTONS
+        buttons_x = 0
+        # Replaces strings in settings_buttons list with buttons with the same name
+        for i in range(len(self.settings_buttons)):
+            buttons_x += constants.BUTTON_SPACING
+            self.settings_buttons[i] = Button(self.settings_buttons[i], buttons_x, self.ui_rect.center[1])
+            buttons_x += self.settings_buttons[i].width
 
         # CHIP BUTTONS
-
         self.chip_buttons.append(Button('CREATE', constants.BUTTON_SPACING, self.ui_rect.center[1]))
         buttons_x = constants.BUTTON_SPACING + self.chip_buttons[0].width
 
@@ -109,15 +121,24 @@ class Board:
         # Text box
         pygame.draw.rect(screen, constants.BOARD_COLOR, self.textbox_rect)
 
-        # Buttons
-        for button in self.chip_buttons:
-            button.draw_chip_button(screen)
 
-        for button in self.input_buttons:
-            button.draw_signal_button(screen)
+        # In settings mode, draws extras settings instead of chip buttons:
+        if self.settings:
+            # Input and output buttons
+            for button in self.input_buttons:
+                button.draw_signal_button(screen)
+            
+            for button in self.output_buttons:
+                button.draw_signal_button(screen)
+
+            for button in self.settings_buttons:
+                button.draw_chip_button(screen)
+        else:
+            # Buttons
+            for button in self.chip_buttons:
+                button.draw_chip_button(screen)
+
         
-        for button in self.output_buttons:
-            button.draw_signal_button(screen)
 
         # Draws inputs & outputs
         for signal in self.signal_inputs:
@@ -297,3 +318,11 @@ class Board:
             all_outputs.append(output.value)
         
         return tuple(all_outputs)
+
+    def clear_selected_signals(self, signals):
+        for signal in signals:
+            signal.highlighted = False
+        signals.clear()
+
+    def group_signals(self, signals):
+        pass

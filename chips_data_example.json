@@ -1,0 +1,3715 @@
+[
+    {
+        "index": 1,
+        "name": "NOT",
+        "color": [
+            38,
+            70,
+            83
+        ],
+        "(False,)": [
+            true
+        ]
+    },
+    {
+        "index": 2,
+        "name": "AND",
+        "color": [
+            244,
+            162,
+            97
+        ],
+        "(True, True)": [
+            true
+        ]
+    },
+    {
+        "index": 3,
+        "name": "NAND",
+        "color": [
+            199,
+            130,
+            91
+        ],
+        "(False, False)": [
+            true
+        ],
+        "(False, True)": [
+            true
+        ],
+        "(True, False)": [
+            true
+        ]
+    },
+    {
+        "index": 4,
+        "name": "OR",
+        "color": [
+            51,
+            11,
+            158
+        ],
+        "(False, True)": [
+            true
+        ],
+        "(True, False)": [
+            true
+        ],
+        "(True, True)": [
+            true
+        ]
+    },
+    {
+        "index": 5,
+        "name": "XOR",
+        "color": [
+            101,
+            193,
+            68
+        ],
+        "(False, True)": [
+            true
+        ],
+        "(True, False)": [
+            true
+        ]
+    },
+    {
+        "index": 6,
+        "name": "XNOR",
+        "color": [
+            12,
+            211,
+            216
+        ],
+        "(False, False)": [
+            true
+        ],
+        "(True, True)": [
+            true
+        ]
+    },
+    {
+        "index": 7,
+        "name": "ADDER",
+        "color": [
+            180,
+            15,
+            150
+        ],
+        "(False, False, True)": [
+            true,
+            false
+        ],
+        "(False, True, False)": [
+            true,
+            false
+        ],
+        "(False, True, True)": [
+            false,
+            true
+        ],
+        "(True, False, False)": [
+            true,
+            false
+        ],
+        "(True, False, True)": [
+            false,
+            true
+        ],
+        "(True, True, False)": [
+            false,
+            true
+        ],
+        "(True, True, True)": [
+            true,
+            true
+        ]
+    },
+    {
+        "index": 8,
+        "name": "4BIT ADDER",
+        "color": [
+            184,
+            171,
+            215
+        ],
+        "(False, False, False, False, False, False, False, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "(False, False, False, False, False, False, False, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, False, False, False, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, False, False, True, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, False, False, True, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, False, False, True, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, False, False, True, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, False, True, False, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(False, False, False, False, False, True, False, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(False, False, False, False, False, True, False, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, False, True, False, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, False, True, True, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, False, True, True, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, False, True, True, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, False, True, True, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, False, False, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "(False, False, False, False, True, False, False, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(False, False, False, False, True, False, False, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, False, False, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, False, True, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, True, False, True, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, True, False, True, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, False, True, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, True, False, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(False, False, False, False, True, True, False, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, True, True, False, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, True, False, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, True, True, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, False, False, True, True, True, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, True, True, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, False, True, True, True, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, False, False, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, False, False, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, False, False, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, False, False, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, False, True, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, False, True, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, False, True, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, False, True, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, True, False, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, True, False, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, True, False, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, True, False, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, True, True, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, True, True, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, False, True, True, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, False, True, True, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, False, False, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, True, True, False, False, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, True, True, False, False, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, False, False, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, False, True, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, True, False, True, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, True, False, True, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, False, True, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, True, False, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, False, True, True, True, False, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, True, True, False, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, True, False, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, True, True, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, False, True, True, True, True, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, True, True, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, False, True, True, True, True, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, False, False, False, False, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, False, True, False, False, False, False, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, False, True, False, False, False, False, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, False, False, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, False, True, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, False, True, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, False, True, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, False, False, True, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, False, True, False, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, True, False, False, True, False, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, True, False, False, True, False, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, True, False, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, True, True, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, True, True, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, False, True, True, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, False, True, True, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, True, False, False, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, False, True, False, True, False, False, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, True, False, True, False, False, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, False, False, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, False, True, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, False, True, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, False, True, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, True, False, True, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, True, True, False, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, False, True, False, True, True, False, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, True, False, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, True, False, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, True, True, True, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, True, True, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, False, True, True, True, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, False, True, True, True, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, False, False, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, True, False, False, False, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, True, False, False, False, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, False, False, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, False, True, False, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, False, True, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, False, True, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, False, False, True, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, False, True, False, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, True, False, True, False, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, True, False, True, False, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, True, False, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, True, True, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, True, True, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, False, True, True, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, False, True, True, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, True, False, False, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, True, True, False, False, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, True, True, False, False, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, False, False, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, False, True, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, False, True, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, False, True, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, True, False, True, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, True, True, False, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, False, True, True, True, True, False, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, True, False, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, True, False, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, True, True, True, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, True, True, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, False, True, True, True, True, True, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, False, True, True, True, True, True, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(False, True, False, False, False, False, False, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(False, True, False, False, False, False, False, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(False, True, False, False, False, False, False, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, False, False, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, False, True, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, False, False, True, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, False, False, True, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, False, True, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, True, False, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, False, True, False, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, False, True, False, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, True, False, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, True, True, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, True, True, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, False, True, True, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, False, False, True, True, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, False, True, False, False, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(False, True, False, False, True, False, False, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, True, False, False, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, False, False, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, False, True, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, True, False, True, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, False, True, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, False, True, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, False, True, True, False, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, True, True, False, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, True, False, False, True, True, False, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, True, False, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, True, True, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, True, True, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, False, True, True, True, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, False, True, True, True, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, False, False, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, True, False, False, False, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, True, False, False, False, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, False, False, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, False, True, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, False, False, True, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, False, False, True, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, False, True, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, True, False, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, False, True, False, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, False, True, False, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, True, False, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, True, True, False, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, True, True, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, False, True, True, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, False, True, False, True, True, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, False, True, True, False, False, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, False, True, True, False, False, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, True, False, False, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, False, False, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, False, True, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, True, False, True, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, False, True, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, False, True, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, False, True, True, True, False, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, True, True, False, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, False, True, True, True, False, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, True, False, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, True, True, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, True, True, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, False, True, True, True, True, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, False, True, True, True, True, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, False, False, False, False, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, True, True, False, False, False, False, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, True, True, False, False, False, False, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, False, False, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, False, True, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, False, True, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, False, True, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, False, False, True, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, False, True, False, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, True, False, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, True, False, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, False, True, False, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, False, True, True, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, True, True, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, False, True, True, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, False, False, True, True, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, False, True, False, False, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(False, True, True, False, True, False, False, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, False, False, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, False, False, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, True, False, True, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, False, True, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, False, True, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, True, False, True, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, False, True, True, False, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, True, False, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, True, False, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, True, True, False, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, False, True, True, True, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, True, True, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, False, True, True, True, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, False, True, True, True, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, False, False, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, True, False, False, False, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, True, False, False, False, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, False, False, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, False, True, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, False, True, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, False, True, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, False, False, True, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, False, True, False, False, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, True, False, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, True, False, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, False, True, False, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, False, True, True, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, True, True, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, False, True, True, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(False, True, True, True, False, True, True, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(False, True, True, True, True, False, False, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(False, True, True, True, True, False, False, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, False, False, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, False, False, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, True, False, True, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, False, True, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, False, True, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, True, False, True, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(False, True, True, True, True, True, False, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, True, False, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, True, False, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, True, True, False, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(False, True, True, True, True, True, True, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, True, True, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(False, True, True, True, True, True, True, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(False, True, True, True, True, True, True, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            true
+        ],
+        "(True, False, False, False, False, False, False, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ],
+        "(True, False, False, False, False, False, False, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(True, False, False, False, False, False, False, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, False, False, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, False, True, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, False, False, True, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, False, False, True, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, False, True, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, True, False, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(True, False, False, False, False, True, False, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, False, True, False, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, True, False, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, True, True, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, False, True, True, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, True, True, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, False, True, True, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, False, True, False, False, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(True, False, False, False, True, False, False, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(True, False, False, False, True, False, False, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, False, False, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, False, True, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, True, False, True, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, True, False, True, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, False, True, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, True, False, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, True, True, False, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, False, False, False, True, True, False, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, True, False, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, True, True, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, True, True, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, False, True, True, True, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, False, True, True, True, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, False, False, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, True, False, False, False, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, True, False, False, False, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, False, False, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, False, True, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, False, False, True, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, False, False, True, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, False, True, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, True, False, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, True, False, True, False, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, False, True, False, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, True, False, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, True, True, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, False, True, True, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, True, True, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, False, True, True, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, False, False, True, True, False, False, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, True, True, False, False, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, False, True, True, False, False, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, False, False, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, False, True, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, True, False, True, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, True, False, True, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, False, True, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, True, False, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, True, True, False, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, False, True, True, True, False, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, True, False, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, True, True, False, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, True, True, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, False, True, True, True, True, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, False, False, True, True, True, True, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, False, False, False, False, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, False, True, False, False, False, False, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, True, False, False, False, False, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, False, False, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, False, True, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, False, True, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, False, True, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, False, False, True, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, False, True, False, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, True, False, False, True, False, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, True, False, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, True, False, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, False, True, True, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, True, True, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, False, True, True, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, False, True, True, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, False, True, False, False, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, True, False, True, False, False, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, False, True, False, True, False, False, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, False, False, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, False, True, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, False, True, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, False, True, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, True, False, True, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, True, True, False, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, True, False, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, True, False, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, True, True, False, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, False, True, True, True, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, True, True, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, False, True, True, True, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, False, True, True, True, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, False, False, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, True, False, False, False, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, True, False, False, False, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, False, False, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, False, True, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, False, True, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, False, True, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, False, False, True, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, False, True, False, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, True, False, True, False, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, True, False, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, True, False, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, False, True, True, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, True, True, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, False, True, True, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, False, True, True, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(True, False, True, True, True, False, False, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, True, True, False, False, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, False, True, True, True, False, False, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, False, False, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, False, True, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, False, True, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, False, True, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, True, False, True, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, True, True, False, False, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, True, False, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, True, False, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, True, True, False, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, False, True, True, True, True, True, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, True, True, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, False, True, True, True, True, True, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(True, False, True, True, True, True, True, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(True, True, False, False, False, False, False, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            false
+        ],
+        "(True, True, False, False, False, False, False, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, False, False, False, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, False, False, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, False, True, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, False, False, True, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, False, True, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, False, True, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, False, False, True, False, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, False, True, False, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, False, True, False, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, True, False, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, True, True, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, True, True, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, False, True, True, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, False, False, True, True, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, False, True, False, False, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, True, False, False, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, True, False, False, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, False, False, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, False, True, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, False, True, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, False, True, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, False, True, False, True, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, False, True, True, False, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, True, True, False, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, True, False, False, True, True, False, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, True, False, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, True, True, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, True, True, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, False, True, True, True, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, False, True, True, True, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, False, False, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, False, True, False, False, False, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, False, False, False, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, False, False, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, False, True, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, False, False, True, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, False, True, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, False, True, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, False, True, False, True, False, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, False, True, False, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, False, True, False, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, True, False, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, True, True, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, True, True, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, False, True, True, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, False, True, False, True, True, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, True, False, True, True, False, False, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, True, False, False, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, True, False, False, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, False, False, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, False, True, False, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, False, True, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, False, True, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, False, True, True, False, True, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, False, True, True, True, False, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, True, True, False, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, False, True, True, True, False, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, True, False, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, True, True, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, True, True, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, False, True, True, True, True, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, True, False, True, True, True, True, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, False, False, False, False, False, False)": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "(True, True, True, False, False, False, False, False, True)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, False, False, True, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, False, False, True, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, False, False, True, False, False)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, False, True, False, True)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, False, True, True, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, False, False, True, True, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, False, False, True, False, False, False)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, True, False, False, True)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, True, False, True, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, False, True, False, True, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, False, True, True, False, False)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, True, True, False, True)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, False, True, True, True, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, False, False, True, True, True, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, False, False, False, False)": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, False, False, False, True)": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, False, False, True, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, False, False, True, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, False, True, False, False)": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, False, True, False, True)": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, False, True, True, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, False, True, True, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, True, False, False, False)": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, True, False, False, True)": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, True, False, True, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, True, False, True, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, True, True, False, False)": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, True, True, False, True)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, False, True, True, True, True, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, False, True, True, True, True, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, False, False, False, False)": [
+            true,
+            true,
+            true,
+            true,
+            false
+        ],
+        "(True, True, True, True, False, False, False, False, True)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, False, False, True, False)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, False, False, True, True)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, False, False, True, False, False)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, False, True, False, True)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, False, True, True, False)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, False, False, True, True, True)": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(True, True, True, True, False, True, False, False, False)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, True, False, False, True)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, True, False, True, False)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, False, True, False, True, True)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, False, True, True, False, False)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, True, True, False, True)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, False, True, True, True, False)": [
+            true,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(True, True, True, True, False, True, True, True, True)": [
+            false,
+            true,
+            true,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, False, False, False, False)": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, False, False, False, True)": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, False, False, True, False)": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, False, False, True, True)": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, False, True, False, False)": [
+            false,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, False, True, False, True)": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, False, True, True, False)": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, False, True, True, True)": [
+            true,
+            false,
+            true,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, True, False, False, False)": [
+            false,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, True, False, False, True)": [
+            true,
+            true,
+            false,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, True, False, True, False)": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, True, False, True, True)": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, True, True, False, False)": [
+            false,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, True, True, False, True)": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "(True, True, True, True, True, True, True, True, False)": [
+            false,
+            true,
+            true,
+            true,
+            true
+        ],
+        "(True, True, True, True, True, True, True, True, True)": [
+            true,
+            true,
+            true,
+            true,
+            true
+        ]
+    }
+]

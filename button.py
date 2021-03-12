@@ -9,7 +9,7 @@ class Button:
         self.text_surface = constants.BUTTON_FONT.render(self.text, True, constants.FONT_COLOR)
         self.color = constants.BOARD_COLOR
 
-        # If width or height are not defined, then its assumed that this is a chip button so assigns width and height accordingly 
+        # If width or height are not defined, then its assumed that this is a chip/settings button so assigns width and height according to the text
         if width is None or height is None:
             self.width = self.text_surface.get_width() + constants.BUTTON_SPACING*2
             self.height = constants.MARGIN - self.text_surface.get_height() + constants.BUTTON_SPACING*2

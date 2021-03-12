@@ -38,7 +38,7 @@ class Chip:
 
     # Changes gate position and rectangle position based on new coordinates
     def move(self, x, y):
-        self.pos = Vector2(x, y)
+        self.pos = Vector2(x - self.width / 2, y - self.height / 2)
         self.chip_rect.move(self.pos)
 
         inputs_count = 0
@@ -46,11 +46,11 @@ class Chip:
 
         # Changes signal positions
         for i in range(self.height):
-            if i % (self.height // (len(self.inputs) + 1)) == 0 and i != 0 and abs(self.height - i) > constants.CHIP_SIGNAL_RADIUS:
-                self.inputs[inputs_count].pos = Vector2(x, y + i)
+            if i % (self.height // (len(self.inputs) + 1)) == 0 and i != 0 and inputs_count < len(self.inputs):
+                self.inputs[inputs_count].pos = Vector2(self.pos.x, self.pos.y + i)
                 inputs_count += 1
-            if i % (self.height // (len(self.outputs) + 1)) == 0 and i != 0 and abs(self.height - i) > constants.CHIP_SIGNAL_RADIUS:
-                self.outputs[outputs_count].pos = Vector2(x + self.width, y + i)
+            if i % (self.height // (len(self.outputs) + 1)) == 0 and i != 0 and outputs_count < len(self.outputs):
+                self.outputs[outputs_count].pos = Vector2(self.pos.x + self.width, self.pos.y + i)
                 outputs_count += 1
 
     # Creates signals on the gate
