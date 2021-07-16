@@ -22,7 +22,8 @@ class Board:
         self.output_buttons = []
 
         self.chip_buttons = []
-        self.settings_buttons = ['BINARY', 'GROUP']
+        self.settings_buttons_texts = ['BINARY', 'GROUP']
+        self.settings_buttons = []
 
         self.signal_inputs = []
         self.signal_outputs = []
@@ -89,7 +90,8 @@ class Board:
         # Replaces strings in settings_buttons list with buttons with the same name
         for i in range(len(self.settings_buttons)):
             buttons_x += constants.BUTTON_SPACING
-            self.settings_buttons[i] = Button(self.settings_buttons[i], buttons_x, self.ui_rect.center[1])
+            print(type(self.settings_buttons[i]))
+            self.settings_buttons[i] = Button(self.settings_buttons_texts[i], buttons_x, self.ui_rect.center[1])
             buttons_x += self.settings_buttons[i].width
 
         # CHIP BUTTONS
